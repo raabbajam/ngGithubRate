@@ -1,0 +1,748 @@
+{
+  "key": "userData",
+  "value": {
+    "user": "raabbajam",
+    "stats": {
+      "openedIssuedStats": 1,
+      "closedIssuedStats": 3,
+      "openedPullRequestedStats": 2,
+      "mergedPullRequestedStats": 1,
+      "closedUnmergedPullRequestedStats": 1
+    },
+    "uniqueRepos": ["substack/browserify-adventure", "lukluk/WSQL", "stampit-org/stampit", "jsdoc2md/jsdoc-to-markdown", "paulomcnally/json-api-response", "codrops/NaturalLanguageForm", "jlord/patchwork", "skaterdav85/validatorjs"],
+    "totalUniqueRepos": 8
+  },
+  "progress": 1,
+  "total": 2
+} {
+  "key": "userData",
+  "value": {
+    "name": "Raabb Ajam",
+    "email": "raabbajam@gmail.com",
+    "joinDate": "2014-08-21T01:36:17Z",
+    "web": "https://twitter.com/SpeakandCare",
+    "id": 8508709,
+    "country": "Yogyakarta, ID",
+    "followers": 7,
+    "following": 10,
+    "username": "raabbajam",
+    "overallContributions": 442,
+    "lastMonthContributions": 73,
+    "lastYearContributions": 442,
+    "repositories": ["raabbajam/github-rate", "raabbajam/loopback-example-angular", "raabbajam/loopback-example-mongodb", "raabbajam/nodeschool", "raabbajam/loopback-example-model-relations", "raabbajam/loopback-example-app-logic", "raabbajam/loopback-example-access-control", "raabbajam/loopback-getting-started-intermediate", "raabbajam/loopback-getting-started", "raabbajam/ngFirebase", "raabbajam/polymer-spa", "raabbajam/ngTwitApp", "substack/browserify-adventure", "raabbajam/hello-world", "jlord/patchwork", "raabbajam/guru-scraper", "raabbajam/github-scraper", "raabbajam/bassbull", "raabbajam/priceInserter", "raabbajam/priceCacheCalendar", "raabbajam/priceScraper", "lukluk/WSQL", "raabbajam/meteorMicroscope", "raabbajam/sailsChatApp", "raabbajam/bgggraphy", "stampit-org/stampit", "raabbajam/markticle", "raabbajam/snippets", "jsdoc2md/jsdoc-to-markdown", "raabbajam/queueInserter", "raabbajam/priceGenerator", "skaterdav85/validatorjs", "paulomcnally/json-api-response", "raabbajam/urlto", "codrops/NaturalLanguageForm"],
+    "repositoriesContributed": 35
+  },
+  "progress": 2,
+  "total": 2
+} {
+  "key": "getRepoContributors",
+  "value": {
+    "fullName": "raabbajam/github-rate",
+    "contributors": 1
+  },
+  "progress": 1,
+  "total": 35
+} {
+  "key": "getRepoContributors",
+  "value": {
+    "fullName": "raabbajam/loopback-example-angular",
+    "contributors": 1
+  },
+  "progress": 2,
+  "total": 35
+} {
+  "key": "getRepoContributors",
+  "value": {
+    "fullName": "raabbajam/loopback-example-mongodb",
+    "contributors": 1
+  },
+  "progress": 3,
+  "total": 35
+} {
+  "key": "getRepoContributors",
+  "value": {
+    "fullName": "raabbajam/nodeschool",
+    "contributors": 1
+  },
+  "progress": 4,
+  "total": 35
+} {
+  "key": "getRepoContributors",
+  "value": {
+    "fullName": "raabbajam/loopback-example-model-relations",
+    "contributors": 1
+  },
+  "progress": 5,
+  "total": 35
+} {
+  "key": "getRepoContributors",
+  "value": {
+    "fullName": "raabbajam/loopback-example-app-logic",
+    "contributors": 1
+  },
+  "progress": 6,
+  "total": 35
+} {
+  "key": "getRepoContributors",
+  "value": {
+    "fullName": "raabbajam/loopback-example-access-control",
+    "contributors": 1
+  },
+  "progress": 7,
+  "total": 35
+} {
+  "key": "getRepoContributors",
+  "value": {
+    "fullName": "raabbajam/loopback-getting-started",
+    "contributors": 1
+  },
+  "progress": 8,
+  "total": 35
+} {
+  "key": "getRepoContributors",
+  "value": {
+    "fullName": "raabbajam/ngFirebase",
+    "contributors": 1
+  },
+  "progress": 9,
+  "total": 35
+} {
+  "key": "getRepoContributors",
+  "value": {
+    "fullName": "raabbajam/polymer-spa",
+    "contributors": 1
+  },
+  "progress": 10,
+  "total": 35
+} {
+  "key": "getRepoContributors",
+  "value": {
+    "fullName": "raabbajam/loopback-getting-started-intermediate",
+    "contributors": 1
+  },
+  "progress": 11,
+  "total": 35
+} {
+  "key": "getRepoContributors",
+  "value": {
+    "fullName": "raabbajam/ngTwitApp",
+    "contributors": 1
+  },
+  "progress": 12,
+  "total": 35
+} {
+  "key": "getRepoContributors",
+  "value": {
+    "fullName": "raabbajam/hello-world",
+    "contributors": 1
+  },
+  "progress": 13,
+  "total": 35
+} {
+  "key": "getRepoContributors",
+  "value": {
+    "fullName": "raabbajam/github-scraper",
+    "contributors": 1
+  },
+  "progress": 14,
+  "total": 35
+} {
+  "key": "getRepoContributors",
+  "value": {
+    "fullName": "raabbajam/bassbull",
+    "contributors": 1
+  },
+  "progress": 15,
+  "total": 35
+} {
+  "key": "getRepoContributors",
+  "value": {
+    "fullName": "raabbajam/priceInserter",
+    "contributors": 2
+  },
+  "progress": 16,
+  "total": 35
+} {
+  "key": "getRepoContributors",
+  "value": {
+    "fullName": "substack/browserify-adventure",
+    "contributors": 7
+  },
+  "progress": 17,
+  "total": 35
+} {
+  "key": "getRepoContributors",
+  "value": {
+    "fullName": "raabbajam/priceScraper",
+    "contributors": 2
+  },
+  "progress": 18,
+  "total": 35
+} {
+  "key": "getRepoContributors",
+  "value": {
+    "fullName": "raabbajam/meteorMicroscope",
+    "contributors": 1
+  },
+  "progress": 19,
+  "total": 35
+} {
+  "key": "getRepoContributors",
+  "value": {
+    "fullName": "raabbajam/sailsChatApp",
+    "contributors": 1
+  },
+  "progress": 20,
+  "total": 35
+} {
+  "key": "getRepoContributors",
+  "value": {
+    "fullName": "raabbajam/guru-scraper",
+    "contributors": 1
+  },
+  "progress": 21,
+  "total": 35
+} {
+  "key": "getRepoContributors",
+  "value": {
+    "fullName": "raabbajam/priceCacheCalendar",
+    "contributors": 2
+  },
+  "progress": 22,
+  "total": 35
+} {
+  "key": "getRepoContributors",
+  "value": {
+    "fullName": "lukluk/WSQL",
+    "contributors": 1
+  },
+  "progress": 23,
+  "total": 35
+} {
+  "key": "getRepoContributors",
+  "value": {
+    "fullName": "raabbajam/snippets",
+    "contributors": 1
+  },
+  "progress": 24,
+  "total": 35
+} {
+  "key": "getRepoContributors",
+  "value": {
+    "fullName": "raabbajam/bgggraphy",
+    "contributors": 1
+  },
+  "progress": 25,
+  "total": 35
+} {
+  "key": "getRepoContributors",
+  "value": {
+    "fullName": "raabbajam/queueInserter",
+    "contributors": 1
+  },
+  "progress": 26,
+  "total": 35
+} {
+  "key": "getRepoContributors",
+  "value": {
+    "fullName": "raabbajam/priceGenerator",
+    "contributors": 1
+  },
+  "progress": 27,
+  "total": 35
+} {
+  "key": "getRepoContributors",
+  "value": {
+    "fullName": "jsdoc2md/jsdoc-to-markdown",
+    "contributors": 3
+  },
+  "progress": 28,
+  "total": 35
+} {
+  "key": "getRepoContributors",
+  "value": {
+    "fullName": "raabbajam/markticle",
+    "contributors": 1
+  },
+  "progress": 29,
+  "total": 35
+} {
+  "key": "getRepoContributors",
+  "value": {
+    "fullName": "raabbajam/urlto",
+    "contributors": 2
+  },
+  "progress": 30,
+  "total": 35
+} {
+  "key": "getRepoContributors",
+  "value": {
+    "fullName": "jlord/patchwork",
+    "contributors": 30
+  },
+  "progress": 31,
+  "total": 35
+} {
+  "key": "getRepoContributors",
+  "value": {
+    "fullName": "skaterdav85/validatorjs",
+    "contributors": 7
+  },
+  "progress": 32,
+  "total": 35
+} {
+  "key": "getRepoContributors",
+  "value": {
+    "fullName": "paulomcnally/json-api-response",
+    "contributors": 2
+  },
+  "progress": 33,
+  "total": 35
+} {
+  "key": "getRepoContributors",
+  "value": {
+    "fullName": "stampit-org/stampit",
+    "contributors": 12
+  },
+  "progress": 34,
+  "total": 35
+} {
+  "key": "getRepoContributors",
+  "value": {
+    "fullName": "codrops/NaturalLanguageForm",
+    "contributors": 3
+  },
+  "progress": 35,
+  "total": 35
+} {
+  "key": "getRepoDataForUser",
+  "value": {
+    "name": "priceCacheCalendar",
+    "owner": "raabbajam",
+    "fullName": "raabbajam/priceCacheCalendar",
+    "description": "my another very own function",
+    "url": "https://github.com/raabbajam/priceCacheCalendar",
+    "homepage": null,
+    "language": "HTML",
+    "stars": 1,
+    "watchers": 1,
+    "subscribers": 1,
+    "startDate": "2014-11-03T23:25:10Z",
+    "allUsersStats": {
+      "overall": {
+        "a": 85189,
+        "d": 48065,
+        "c": 143
+      },
+      "lastMonth": {
+        "a": 0,
+        "d": 0,
+        "c": 0
+      },
+      "lastYear": {
+        "a": 380,
+        "d": 58,
+        "c": 6
+      }
+    },
+    "userStats": {
+      "overall": {
+        "a": 84406,
+        "d": 47778,
+        "c": 105
+      },
+      "lastMonth": {
+        "a": 0,
+        "d": 0,
+        "c": 0
+      },
+      "lastYear": {
+        "a": 13,
+        "d": 12,
+        "c": 1
+      }
+    },
+    "contributors": 2,
+    "commits": 172,
+    "branches": 1,
+    "releases": 0
+  },
+  "progress": 1,
+  "total": 10
+} {
+  "key": "getRepoDataForUser",
+  "value": {
+    "name": "priceScraper",
+    "owner": "raabbajam",
+    "fullName": "raabbajam/priceScraper",
+    "description": "Just another my very own function",
+    "url": "https://github.com/raabbajam/priceScraper",
+    "homepage": null,
+    "language": "JavaScript",
+    "stars": 0,
+    "watchers": 0,
+    "subscribers": 1,
+    "startDate": "2014-11-17T10:02:21Z",
+    "allUsersStats": {
+      "overall": {
+        "a": 8285,
+        "d": 3240,
+        "c": 74
+      },
+      "lastMonth": {
+        "a": 0,
+        "d": 0,
+        "c": 0
+      },
+      "lastYear": {
+        "a": 53,
+        "d": 1,
+        "c": 1
+      }
+    },
+    "userStats": {
+      "overall": {
+        "a": 8219,
+        "d": 3228,
+        "c": 69
+      },
+      "lastMonth": {
+        "a": 0,
+        "d": 0,
+        "c": 0
+      },
+      "lastYear": {
+        "a": 0,
+        "d": 0,
+        "c": 0
+      }
+    },
+    "contributors": 2,
+    "commits": 81,
+    "branches": 1,
+    "releases": 0
+  },
+  "progress": 2,
+  "total": 10
+} {
+  "key": "getRepoDataForUser",
+  "value": {
+    "name": "json-api-response",
+    "owner": "paulomcnally",
+    "fullName": "paulomcnally/json-api-response",
+    "description": "API responses in JSON format",
+    "url": "https://github.com/paulomcnally/json-api-response",
+    "homepage": null,
+    "language": "JavaScript",
+    "stars": 3,
+    "watchers": 3,
+    "subscribers": 1,
+    "startDate": "2013-10-16T15:13:33Z",
+    "allUsersStats": {
+      "overall": {
+        "a": 604,
+        "d": 88,
+        "c": 12
+      },
+      "lastMonth": {
+        "a": 0,
+        "d": 0,
+        "c": 0
+      },
+      "lastYear": {
+        "a": 0,
+        "d": 0,
+        "c": 0
+      }
+    },
+    "contributors": 2,
+    "commits": 13,
+    "branches": 1,
+    "releases": 1
+  },
+  "progress": 3,
+  "total": 10
+} {
+  "key": "getRepoDataForUser",
+  "value": {
+    "name": "NaturalLanguageForm",
+    "owner": "codrops",
+    "fullName": "codrops/NaturalLanguageForm",
+    "description": "An experimental form that uses natural language instead of the usual form layout. Values are entered using custom input elements.",
+    "url": "https://github.com/codrops/NaturalLanguageForm",
+    "homepage": null,
+    "language": "CSS",
+    "stars": 182,
+    "watchers": 182,
+    "subscribers": 17,
+    "startDate": "2013-05-21T15:44:57Z",
+    "allUsersStats": {
+      "overall": {
+        "a": 772,
+        "d": 6,
+        "c": 3
+      },
+      "lastMonth": {
+        "a": 0,
+        "d": 0,
+        "c": 0
+      },
+      "lastYear": {
+        "a": 9,
+        "d": 0,
+        "c": 1
+      }
+    },
+    "contributors": 3,
+    "commits": 5,
+    "branches": 1,
+    "releases": 0
+  },
+  "progress": 4,
+  "total": 10
+} {
+  "key": "getRepoDataForUser",
+  "value": {
+    "name": "browserify-adventure",
+    "owner": "substack",
+    "fullName": "substack/browserify-adventure",
+    "description": "learn browserify with this educational adventure",
+    "url": "https://github.com/substack/browserify-adventure",
+    "homepage": null,
+    "language": "JavaScript",
+    "stars": 101,
+    "watchers": 101,
+    "subscribers": 7,
+    "startDate": "2014-06-30T01:58:18Z",
+    "allUsersStats": {
+      "overall": {
+        "a": 18205,
+        "d": 616,
+        "c": 92
+      },
+      "lastMonth": {
+        "a": 0,
+        "d": 0,
+        "c": 0
+      },
+      "lastYear": {
+        "a": 0,
+        "d": 0,
+        "c": 0
+      }
+    },
+    "contributors": 7,
+    "commits": 96,
+    "branches": 1,
+    "releases": 14
+  },
+  "progress": 5,
+  "total": 10
+} {
+  "key": "getRepoDataForUser",
+  "value": {
+    "name": "validatorjs",
+    "owner": "skaterdav85",
+    "fullName": "skaterdav85/validatorjs",
+    "description": "A data validation library in JavaScript for the browser and Node.js,  inspired by the Validator class in the Laravel framework.",
+    "url": "https://github.com/skaterdav85/validatorjs",
+    "homepage": "",
+    "language": "JavaScript",
+    "stars": 91,
+    "watchers": 91,
+    "subscribers": 8,
+    "startDate": "2012-09-08T09:09:41Z",
+    "allUsersStats": {
+      "overall": {
+        "a": 164055,
+        "d": 157609,
+        "c": 175
+      },
+      "lastMonth": {
+        "a": 1019,
+        "d": 669,
+        "c": 8
+      },
+      "lastYear": {
+        "a": 1019,
+        "d": 669,
+        "c": 8
+      }
+    },
+    "contributors": 7,
+    "commits": 185,
+    "branches": 3,
+    "releases": 17
+  },
+  "progress": 6,
+  "total": 10
+} {
+  "key": "getRepoDataForUser",
+  "value": {
+    "name": "jsdoc-to-markdown",
+    "owner": "jsdoc2md",
+    "fullName": "jsdoc2md/jsdoc-to-markdown",
+    "description": "Markdown API documentation generator",
+    "url": "https://github.com/jsdoc2md/jsdoc-to-markdown",
+    "homepage": "",
+    "language": "JavaScript",
+    "stars": 93,
+    "watchers": 93,
+    "subscribers": 3,
+    "startDate": "2014-05-15T19:04:34Z",
+    "allUsersStats": {
+      "overall": {
+        "a": 78382,
+        "d": 67661,
+        "c": 719
+      },
+      "lastMonth": {
+        "a": 7,
+        "d": 7,
+        "c": 1
+      },
+      "lastYear": {
+        "a": 18520,
+        "d": 16472,
+        "c": 83
+      }
+    },
+    "contributors": 3,
+    "commits": 725,
+    "branches": 1,
+    "releases": 56
+  },
+  "progress": 7,
+  "total": 10
+} {
+  "key": "getRepoDataForUser",
+  "value": {
+    "name": "stampit",
+    "owner": "stampit-org",
+    "fullName": "stampit-org/stampit",
+    "description": "OOP is better with stamps: Composable object factories.",
+    "url": "https://github.com/stampit-org/stampit",
+    "homepage": "http://pjabook.com",
+    "language": "JavaScript",
+    "stars": 927,
+    "watchers": 927,
+    "subscribers": 47,
+    "startDate": "2013-02-10T16:20:49Z",
+    "allUsersStats": {
+      "overall": {
+        "a": 24178,
+        "d": 28968,
+        "c": 130
+      },
+      "lastMonth": {
+        "a": 3414,
+        "d": 10699,
+        "c": 64
+      },
+      "lastYear": {
+        "a": 11463,
+        "d": 28170,
+        "c": 77
+      }
+    },
+    "contributors": 12,
+    "commits": 223,
+    "branches": 7,
+    "releases": 20
+  },
+  "progress": 8,
+  "total": 10
+} {
+  "key": "getRepoDataForUser",
+  "value": {
+    "name": "urlto",
+    "owner": "raabbajam",
+    "fullName": "raabbajam/urlto",
+    "description": "Url shortener. Well more like url masking since I can't afford a short domain like bit.ly / fb.me",
+    "url": "https://github.com/raabbajam/urlto",
+    "homepage": null,
+    "language": "CSS",
+    "stars": 0,
+    "watchers": 0,
+    "subscribers": 1,
+    "startDate": "2014-08-21T01:45:32Z",
+    "allUsersStats": {
+      "overall": {
+        "a": 487410,
+        "d": 278,
+        "c": 7
+      },
+      "lastMonth": {
+        "a": 0,
+        "d": 0,
+        "c": 0
+      },
+      "lastYear": {
+        "a": 0,
+        "d": 0,
+        "c": 0
+      }
+    },
+    "userStats": {
+      "overall": {
+        "a": 0,
+        "d": 1,
+        "c": 1
+      },
+      "lastMonth": {
+        "a": 0,
+        "d": 0,
+        "c": 0
+      },
+      "lastYear": {
+        "a": 0,
+        "d": 0,
+        "c": 0
+      }
+    },
+    "contributors": 2,
+    "commits": 7,
+    "branches": 1,
+    "releases": 0
+  },
+  "progress": 9,
+  "total": 10
+} {
+  "key": "getRepoDataForUser",
+  "value": {
+    "name": "patchwork",
+    "owner": "jlord",
+    "fullName": "jlord/patchwork",
+    "description": "All the Git-it Workshop completers! ",
+    "url": "https://github.com/jlord/patchwork",
+    "homepage": "http://jlord.github.io/patchwork",
+    "language": "HTML",
+    "stars": 88,
+    "watchers": 88,
+    "subscribers": 14,
+    "startDate": "2014-01-10T00:00:11Z",
+    "allUsersStats": {
+      "overall": {
+        "a": 91847,
+        "d": 58709,
+        "c": 7502
+      },
+      "lastMonth": {
+        "a": 8851,
+        "d": 5458,
+        "c": 736
+      },
+      "lastYear": {
+        "a": 24881,
+        "d": 15399,
+        "c": 2102
+      }
+    },
+    "contributors": 2835,
+    "commits": 14896,
+    "branches": 2,
+    "releases": 0
+  },
+  "progress": 10,
+  "total": 10
+}

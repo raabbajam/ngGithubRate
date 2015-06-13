@@ -1,0 +1,82 @@
+{
+  "name": "ng-github-rate",
+  "version": "0.0.0",
+  "description": "Angular directive for Github Rate widget.",
+  "main": "index.js",
+  "scripts": {
+    "start": "DEBUG=github-rate:*,raabbajam:* nodemon --ignore  server/server.js",
+    "pretest": "jshint .",
+    "clean": "rimraf dist/*",
+    "prebuild": "npm run clean -s",
+    "build": "npm run build:images -s && npm run build:fonts -s && npm run build:json -s && npm run build:scripts -s && npm run build:styles -s && npm run build:markup -s",
+    "build:scripts": "browserify -t partialify -d assets/scripts/main.js -p [minifyify --compressPath . --map main.js.map --output dist/main.js.map] | hashmark -n dist/main.js -s -l 8 -m assets.json 'dist/{name}{hash}{ext}'",
+    "build:styles": "stylus assets/styles/main.styl -I node_modules/nib/lib -I node_modules/bootstrap-styl/ -m -o dist/ && hashmark -s -l 8 -m assets.json dist/main.css 'dist/{name}{hash}{ext}'",
+    "build:markup": "jade assets/markup/index.jade --obj assets.json -o dist",
+    "build:images": "mkdir -p dist/images && cp -r assets/images/* dist/images/",
+    "build:fonts": "mkdir -p dist/fonts && cp -r assets/fonts/* dist/fonts/",
+    "build:json": "mkdir -p dist/json && cp -r assets/json/* dist/json/",
+    "test": "karma start --singleRun",
+    "watch": "parallelshell 'npm run watch:test -s' 'npm run watch:build -s'",
+    "watch:test": "karma start",
+    "watch:build": "nodemon -q -w assets/ --ext '.' --exec 'npm run build'",
+    "open:prod": "opener http://example.com",
+    "open:stage": "opener http://staging.example.internal",
+    "open:dev": "opener http://localhost:9093",
+    "deploy:prod": "s3-cli sync ./dist/ s3://example-com/prod-site/",
+    "deploy:stage": "s3-cli sync ./dist/ s3://example-com/stage-site/",
+    "serve": "http-server -p 9093 dist/",
+    "live-reload": "live-reload --port 9092 dist/ --delay=10000",
+    "dev": "npm run open:dev -s & parallelshell 'npm run serve -s' 'npm run watch -s' 'npm run live-reload -s'"
+  },
+  "devDependencies": {
+    "browserify": "^10.2.4",
+    "browserify-shim": "^3.8.8",
+    "hashmark": "^3.0.0",
+    "http-server": "^0.8.0",
+    "jade": "^1.10.0",
+    "jshint": "^2.5.6",
+    "karma": "^0.12.36",
+    "karma-browserify": "^4.2.1",
+    "karma-mocha": "^0.1.10",
+    "karma-phantomjs-launcher": "^0.2.0",
+    "live-reload": "^1.1.0",
+    "minifyify": "^7.0.1",
+    "mocha": "^2.2.5",
+    "nodemon": "^1.3.7",
+    "opener": "^1.4.1",
+    "parallelshell": "^1.1.1",
+    "partialify": "^3.1.3",
+    "phantomjs": "^1.9.17",
+    "rimraf": "^2.4.0",
+    "stylus": "^0.51.1"
+  },
+  "browser": {
+    "jQuery": "./bower_components/jquery/dist/jquery.js",
+    "angular-oboe": "./bower_components/angular-oboe/dist/angular-oboe.js",
+    "ui-bootstrap": "./bower_components/angular-bootstrap/ui-bootstrap-tpls.min.js"
+  },
+  "browserify": {
+    "transform": [
+      "browserify-shim"
+    ]
+  },
+  "browserify-shim": {
+    "./bower_components/oboe/dist/oboe-browser.js": "oboe",
+    "ui-bootstrap": "uiBootstrap",
+    "angular-oboe": "ngOboe",
+    "jQuery": "jQuery"
+  },
+  "keywords": [
+    "angular",
+    "github",
+    "rate",
+    "widget",
+    "directive"
+  ],
+  "author": "Raabb Ajam <raabbajam@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "angular": "^1.3.16",
+    "nib": "^1.1.0"
+  }
+}

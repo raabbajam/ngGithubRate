@@ -1,0 +1,27 @@
+{
+  "name": "ngGithubRate",
+  "main": "index.js",
+  "version": "0.0.0",
+  "authors": [
+    "Muhammad Abdul Jabbaar <raabbajam@gmail.com>"
+  ],
+  "description": "Angular directive for github-rate",
+  "keywords": [
+    "angular",
+    "directive",
+    "github"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular-oboe": "*",
+    "jquery": "~2.1.4",
+    "angular-bootstrap": "~0.13.0"
+  }
+}

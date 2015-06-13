@@ -1,0 +1,93 @@
+doctype html
+html(lang="en")
+  head
+    title rate my github
+    script(src="#{locals['dist/main.js'].substr(5)}")
+    if compileDebug
+      script(src="http://localhost:9092/livereload.js")
+      
+    link(rel="stylesheet",href="#{locals['dist/main.css'].substr(5)}")
+  body(ng-app="ghrate")
+    h1.title.text-center rate my github
+    h3.subtitle.text-senter do you even github, bro?!
+    .widget(ng-controller="WidgetController")
+      form.input-container(ng-submit="getData(user)",ng-class="{'hidden': showResult}")
+        div
+          input(ng-model="user",placeholder="*github username here*",id="user")  
+        label(for="user") fill in the blink
+          span(ng-class="{'hidden': !user}") , now press enter!
+        //- button(ng-click="getData(user)") rate me!
+      .result-container(ng-class="{'hidden': !showResult}")
+        .error-message(ng-if="error") {{error}}
+        .result-counter
+          .counter-message {{data.counterMessage}}
+          .counter-container(ng-repeat="(key, value) in data.counter")
+            span.counter-name {{key}} 
+            progressbar(value="value.progress && (value.progress / value.total * 100) || 0") {{value.progress || 0}} / {{value.total || 0}}
+        .user-data
+          p(ng-show="data.userData.username")
+            em {{data.userData.username}} | 
+            span {{data.userData.id}}
+          ul
+            li
+              em {{data.userData.name}}
+            li(ng-show="data.userData.country") {{data.userData.country}}
+            li(ng-show="data.userData.joinDate") {{data.userData.joinDate}}
+            li(ng-show="data.userData.email") {{data.userData.email}}
+            li(ng-show="data.userData.web") {{data.userData.web}}
+            
+          
+          tabset(vertical="true",type="pills")
+            tab(active="tabs[0].active")
+              tab-heading 
+                a.iconic.home(name="home")
+                | about
+              .tab-content
+                ul
+                  li(ng-show="data.userData.followers")
+                    | followers: 
+                    | {{data.userData.followers}}
+                  li(ng-show="data.userData.following")
+                    | following: 
+                    | {{data.userData.following}}
+                  li(ng-show="data.userData.lastMonthContributions")
+                    | lastMonthContributions: 
+                    | {{data.userData.lastMonthContributions}}
+                  li(ng-show="data.userData.lastYearContributions")
+                    | lastYearContributions: 
+                    | {{data.userData.lastYearContributions}}
+                  li(ng-show="data.userData.overallContributions")
+                    | overallContributions: 
+                    | {{data.userData.overallContributions}}
+                  li(ng-show="data.userData.repositoriesContributed")
+                    | repositoriesContributed: 
+                    | {{data.userData.repositoriesContributed}}
+                  li(ng-show="data.userData.stats.openedIssuedStats")
+                    | stats.openedIssuedStats: 
+                    | {{data.userData.stats.openedIssuedStats}}
+                  li(ng-show="data.userData.stats.closedIssuedStats")
+                    | stats.closedIssuedStats: 
+                    | {{data.userData.stats.closedIssuedStats}}
+                  li(ng-show="data.userData.stats.openedPullRequestedStats")
+                    | stats.openedPullRequestedStats: 
+                    | {{data.userData.stats.openedPullRequestedStats}}
+                  li(ng-show="data.userData.stats.mergedPullRequestedStats")
+                    | stats.mergedPullRequestedStats: 
+                    | {{data.userData.stats.mergedPullRequestedStats}}
+                  li(ng-show="data.userData.stats.closedUnmergedPullRequestedStats")
+                    | stats.closedUnmergedPullRequestedStats: 
+                    | {{data.userData.stats.closedUnmergedPullRequestedStats}}
+              
+            tab(active="tabs[1].active")
+              tab-heading repositories
+              .tab-content
+                ul.repo-data
+                li(ng-repeat="(key, value) in data.repoData") 
+                  span.key {{key}}: 
+                  spam.value {{value.description }}
+            
+            tab(active="tabs[2].active")
+              tab-heading rating
+              .tab-content
+                rating(ng-model="rate",max="max",readonly="isReadonly",on-hover="hoveringOver(value)",on-leave="overStar = null")
+                span.label(ng-class="{'label-warning': percent<30, 'label-info': percent>=30 && percent<70, 'label-success': percent>=70}",ng-show="overStar && !isReadonly"){{percent}}%
