@@ -1,0 +1,87 @@
+.user-data.container
+  .row
+    .left.col-md-4
+      .avatar-space.text-center.row
+        img.img-rounded.img-responsive(src="{{data.userData.avatar || 'http://placehold.it/350'}}",alt="Avatar")
+        h2 
+          a(href="https://www.github.com/{{data.userData.username}}") {{data.userData.username}}
+        h3 {{data.userData.name}}
+        
+      .contact-space.row
+        h3 contact
+        ul
+          li 
+            a.icon
+            span country: {{data.userData.country || 'N/A'}}
+          li 
+            a.icon
+            span joinDate: {{data.userData.joinDate || 'N/A'}}
+          li 
+            a.icon
+            span email: {{data.userData.email || 'N/A'}}
+          li 
+            a.icon
+            span web: {{data.userData.web || 'N/A'}}
+          
+    .right.col-md-8
+  p(ng-show="data.userData.username")
+  ul
+    li
+      em {{data.userData.name}}
+    
+
+
+  tabset(vertical="true",type="pills")
+    tab(active="tabs[0].active")
+      tab-heading
+        a.iconic.home(name="home")
+        | about
+      .tab-content
+        ul
+          li(ng-show="data.userData.followers")
+            | followers:
+            | {{data.userData.followers}}
+          li(ng-show="data.userData.following")
+            | following:
+            | {{data.userData.following}}
+          li(ng-show="data.userData.lastMonthContributions")
+            | lastMonthContributions:
+            | {{data.userData.lastMonthContributions}}
+          li(ng-show="data.userData.lastYearContributions")
+            | lastYearContributions:
+            | {{data.userData.lastYearContributions}}
+          li(ng-show="data.userData.overallContributions")
+            | overallContributions:
+            | {{data.userData.overallContributions}}
+          li(ng-show="data.userData.repositoriesContributed")
+            | repositoriesContributed:
+            | {{data.userData.repositoriesContributed}}
+          li(ng-show="data.userData.stats.openedIssuedStats")
+            | stats.openedIssuedStats:
+            | {{data.userData.stats.openedIssuedStats}}
+          li(ng-show="data.userData.stats.closedIssuedStats")
+            | stats.closedIssuedStats:
+            | {{data.userData.stats.closedIssuedStats}}
+          li(ng-show="data.userData.stats.openedPullRequestedStats")
+            | stats.openedPullRequestedStats:
+            | {{data.userData.stats.openedPullRequestedStats}}
+          li(ng-show="data.userData.stats.mergedPullRequestedStats")
+            | stats.mergedPullRequestedStats:
+            | {{data.userData.stats.mergedPullRequestedStats}}
+          li(ng-show="data.userData.stats.closedUnmergedPullRequestedStats")
+            | stats.closedUnmergedPullRequestedStats:
+            | {{data.userData.stats.closedUnmergedPullRequestedStats}}
+
+    tab(active="tabs[1].active")
+      tab-heading repositories
+      .tab-content
+        ul.repo-data
+        li(ng-repeat="(key, value) in data.repoData")
+          span.key {{key}}:
+          spam.value {{value.description }}
+
+    tab(active="tabs[2].active")
+      tab-heading rating
+      .tab-content
+        rating(ng-model="rate",max="max",readonly="isReadonly",on-hover="hoveringOver(value)",on-leave="overStar = null")
+        span.label(ng-class="{'label-warning': percent<30, 'label-info': percent>=30 && percent<70, 'label-success': percent>=70}",ng-show="overStar && !isReadonly") {{percent}}%

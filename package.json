@@ -11,7 +11,7 @@
     "build": "npm run build:images -s && npm run build:fonts -s && npm run build:json -s && npm run build:scripts -s && npm run build:styles -s && npm run build:markup -s",
     "build:scripts": "browserify -t partialify -d assets/scripts/main.js -p [minifyify --compressPath . --map main.js.map --output dist/main.js.map] | hashmark -n dist/main.js -s -l 8 -m assets.json 'dist/{name}{hash}{ext}'",
     "build:styles": "stylus assets/styles/main.styl -I node_modules/nib/lib -I node_modules/bootstrap-styl/ -m -o dist/ && hashmark -s -l 8 -m assets.json dist/main.css 'dist/{name}{hash}{ext}'",
-    "build:markup": "jade assets/markup/index.jade --obj assets.json -o dist",
+    "build:markup": "jade assets/markup/ -H --obj assets.json -o dist",
     "build:images": "mkdir -p dist/images && cp -r assets/images/* dist/images/",
     "build:fonts": "mkdir -p dist/fonts && cp -r assets/fonts/* dist/fonts/",
     "build:json": "mkdir -p dist/json && cp -r assets/json/* dist/json/",

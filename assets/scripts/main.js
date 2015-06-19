@@ -8,7 +8,8 @@ require('ui-bootstrap');
 
 angular
   .module('ghrate', ['ui.bootstrap'])
-  .controller('WidgetController', WidgetController);
+  .controller('WidgetController', WidgetController)
+  .directive('widget', widget);
 
 WidgetController.$inject = ['$http', '$scope'];
 function WidgetController($http, $scope) {
@@ -83,4 +84,9 @@ function WidgetController($http, $scope) {
         $scope.error = error;
       });
   }
+}
+function widget () {
+  return {
+    templateUrl: 'templates/widget.html'
+  };
 }
